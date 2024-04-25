@@ -1,0 +1,6 @@
+y<-c(1,2,3,4,5)
+x<-circular(y, units = "hours", template = "clock24")
+summary(x)
+plot(x)
+arrows.circular(mean.circular(x),rho.circular(x),col=2)
+rayleigh.test(x)
